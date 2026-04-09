@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border: 1px solid #d0d0d0;
+    border-radius: 10px;
+    padding: 40px 35px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+#mainHeading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#userInput {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 25px;
+    border: 2px solid #d5d5d5;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fafafa;
+}
+
+#userInput:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background: white;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.2);
+}
+
+#changeTextBtn { background: linear-gradient(135deg, #667eea, #764ba2); }
+#bgColorBtn { background: linear-gradient(135deg, #f093fb, #f5576c); }
+#fontSizeBtn { background: linear-gradient(135deg, #4facfe, #00f2fe); }
+#toggleBtn { background: linear-gradient(135deg, #43e97b, #38f9d7); }
+#resetBtn { background: linear-gradient(135deg, #fa709a, #fee140); }
+
+button {
+    padding: 8px 12px;
+    margin: 5px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+button:hover {
+    filter: brightness(1.1);
+}
+
+#paragraph {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    body { padding: 20px; }
+    .container { padding: 30px 25px; }
+    button { display: block; width: 100%; margin: 5px 0; }
+}
