@@ -13,8 +13,11 @@ document.getElementById("changeTextBtn").addEventListener("click", function () {
 
 // Change background color
 document.getElementById("bgColorBtn").onclick = function () {
-    document.body.style.backgroundColor ="red";
-       
+    document.body.style.backgroundColor ="pink";
+};
+
+document.getElementById("fontColorBtn").onclick = function () {
+    paragraph.style.color = "blue";
 };
 
 // Increase font size
